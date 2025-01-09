@@ -3,8 +3,10 @@ name = "rust"
 version = "0.1.0"
 edition = "2021"
 
-[[bin]]
-name = "ownership"
-path = "src/ownership.rs"
+[workspace]
+
+members = [
+    "guessing_game"
+]
 
 [dependencies]
