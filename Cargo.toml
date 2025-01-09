@@ -6,7 +6,8 @@ edition = "2021"
 [workspace]
 
 members = [
-    "guessing_game"
+    "guessing_game",
+    "common_concepts"
 ]
 
 [dependencies]
