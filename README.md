@@ -2,4 +2,4 @@
 
 ## Larning Materials
 
-- [Rust语言圣经](https://course.rs/)
+- https://kaisery.github.io/trpl-zh-cn/title-page.html
