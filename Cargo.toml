@@ -9,7 +9,8 @@ members = [
     "guessing_game",
     "common_concepts",
     "ownership",
-    "ownership_slice"
+    "ownership_slice",
+    "structure"
 ]
 
 [dependencies]
