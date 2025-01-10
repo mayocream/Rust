@@ -41,9 +41,6 @@ fn main() {
     let r1 = &mut s;
     // let r2 = &mut s; // This will not work
     println!("{}", r1);
-
-    
-
 }
 
 fn takes_ownership(some_string: String) {

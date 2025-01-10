@@ -8,7 +8,8 @@ edition = "2021"
 members = [
     "guessing_game",
     "common_concepts",
-    "ownership"
+    "ownership",
+    "ownership_slice"
 ]
 
 [dependencies]
