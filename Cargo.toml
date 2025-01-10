@@ -1,16 +1,17 @@
 [package]
+edition = "2021"
 name = "rust"
 version = "0.1.0"
-edition = "2021"
 
 [workspace]
 
 members = [
-    "guessing_game",
-    "common_concepts",
-    "ownership",
-    "ownership_slice",
-    "structure"
+  "guessing_game",
+  "common_concepts",
+  "ownership",
+  "ownership_slice",
+  "structure",
+  "rectangles",
 ]
 
 [dependencies]
