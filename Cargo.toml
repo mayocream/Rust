@@ -11,7 +11,11 @@ members = [
   "ownership",
   "ownership_slice",
   "structure",
-  "rectangles", "enums", "if_let", "crates",
+  "rectangles",
+  "enums",
+  "if_let",
+  "crates",
+  "restaurant",
 ]
 
 [dependencies]
