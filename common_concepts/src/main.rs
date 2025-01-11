@@ -1,4 +1,4 @@
-#[allow(unused_variables)]
+#[allow(unused)]
 
 fn main() {
     // 3.1 variables and mutability
