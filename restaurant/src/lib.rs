@@ -34,6 +34,8 @@ mod back_of_house {
     }
 }
 
+use crate::front_of_house::hosting;
+
 pub fn eat_at_restaurant() {
     // Absolute path
     crate::front_of_house::hosting::add_to_waitlist();
@@ -49,4 +51,15 @@ pub fn eat_at_restaurant() {
 
     let order1 = back_of_house::Appetizer::Soup;
     let order2 = back_of_house::Appetizer::Salad;
+
+    // bringing paths into scope with use keyword
+    hosting::add_to_waitlist();
+}
+
+mod customer {
+    use crate::front_of_house::hosting;
+
+    pub fn eat_at_restaurant() {
+        hosting::add_to_waitlist();
+    }
 }
