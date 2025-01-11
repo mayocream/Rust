@@ -7,4 +7,8 @@ edition = "2021"
 name = "strings"
 path = "src/strings.rs"
 
+[[bin]]
+name = "hashmaps"
+path = "src/hashmaps.rs"
+
 [dependencies]
