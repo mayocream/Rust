@@ -1,4 +1,4 @@
-#[allow(unused)]
+#![allow(unused)]
 
 #[derive(Debug)]
 enum IpAddrKind {
