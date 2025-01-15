@@ -7,4 +7,8 @@ edition = "2021"
 name = "traits"
 path = "src/traits.rs"
 
+[[bin]]
+name = "lifetimes"
+path = "src/lifetimes.rs"
+
 [dependencies]
