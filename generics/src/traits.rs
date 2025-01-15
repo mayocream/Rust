@@ -31,12 +31,36 @@ mod aggregator {
         }
     }
 
-    pub fn notify(item: &(impl Summary + Display)) {
+    pub fn notify<T: Summary + Display>(item: &T) {
         println!("Breaking news! {}", item.summarize());
     }
 }
 
+use std::fmt::Display;
+
 use aggregator::{Summary, Tweet, NewsArticle};
+
+// trait bound syntax
+struct Pair<T> {
+    x: T,
+    y: T,
+}
+
+impl<T> Pair<T> {
+    fn new(x: T, y: T) -> Self {
+        Self { x, y }
+    }
+}
+
+impl<T: Display + PartialOrd> Pair<T> {
+    fn cmp_display(&self) {
+        if self.x >= self.y {
+            println!("The largest member is x = {}", self.x);
+        } else {
+            println!("The largest member is y = {}", self.y);
+        }
+    }
+}
 
 fn main() {
     let tweet = Tweet {
@@ -56,4 +80,17 @@ fn main() {
     };
 
     println!("New article available! {}", article.summarize());
+
+    // simpler trait bound
+    fn some_function<T: Display + Clone, U: Clone + Display>(t: T, u: U) -> i32 {
+        0
+    }
+
+    fn some_function_v2<T, U>(t: T, u: U) -> i32
+    where
+        T: Display + Clone,
+        U: Clone + Display,
+    {
+        0
+    }
 }
