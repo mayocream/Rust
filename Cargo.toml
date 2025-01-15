@@ -15,7 +15,7 @@ members = [
   "enums",
   "if_let",
   "crates",
-  "restaurant", "collections", "errors", "generics",
+  "restaurant", "collections", "errors", "generics", "testing",
 ]
 
 [dependencies]
